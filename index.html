@@ -102,16 +102,15 @@ const API_KEY="AIzaSyCzxikyD1hzyMTPQumHPtkynEVpKCQoB9k";
 const CHANNEL_ID="UCSw6HgOIq9GQlNgSPIpSDwg";
 
 // ===== ЗАГРУЗКА СТАТИСТИКИ =====
+if(API_KEY!=="AIzaSyCzxikyD1hzyMTPQumHPtkynEVpKCQoB9k"){
 fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`)
-.then(r => r.json())
-.then(d => {
-    const s = d.items[0].statistics;
-
-    subs.textContent = Number(s.subscriberCount).toLocaleString("ru-RU");
-    views.textContent = Number(s.viewCount).toLocaleString("ru-RU");
-    videos.textContent = Number(s.videoCount).toLocaleString("ru-RU");
-})
-.catch(err => console.error(err));
+.then(r=>r.json())
+.then(d=>{
+const s=d.items[0].statistics;
+subs.textContent=Number(s.subscriberCount).toLocaleString("ru-RU");
+views.textContent=Number(s.viewCount).toLocaleString("ru-RU");
+videos.textContent=Number(s.videoCount).toLocaleString("ru-RU");
+}).catch(console.error);
 }else{
 subs.textContent="API";
 views.textContent="API";
