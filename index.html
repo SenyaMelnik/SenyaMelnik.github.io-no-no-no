@@ -1,699 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Senya Melnik | Официальный сайт</title>
-
-<meta name="description" content="Официальный сайт Senya Melnik. YouTube, стримы, Minecraft, SkyNix, новости и сотрудничество.">
-
-<meta name="keywords" content="Senya Melnik, SkyNix, Minecraft, YouTube, MrSenya_YT">
-
-<meta name="author" content="Senya Melnik">
-
-<link rel="icon" href="favicon.ico">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/mobile.css">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Senya Melnik</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+/* ====== ОСНОВНЫЕ СТИЛИ ====== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#0b1020;color:#fff;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(120px);z-index:-1}
+body:before{width:350px;height:350px;background:#00d4ff55;left:-120px;top:-120px}
+body:after{width:350px;height:350px;background:#6c4cff55;right:-120px;bottom:-120px}
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px}
+h1{font-size:64px;background:linear-gradient(90deg,#00d4ff,#8f5bff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.btn{display:inline-block;margin-top:25px;padding:14px 28px;background:#00bfff;color:#fff;border-radius:999px;text-decoration:none}
+section{max-width:1100px;margin:auto;padding:70px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#ffffff10;border:1px solid #ffffff20;padding:20px;border-radius:16px;backdrop-filter:blur(10px)}
+h2{margin-bottom:25px}
+.bar{height:12px;background:#2a2f45;border-radius:99px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,#00d4ff,#8f5bff);transition:2s}
+.skill{margin:18px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.stat{text-align:center;background:#ffffff10;padding:20px;border-radius:16px}
+.num{font-size:32px;font-weight:700}
+.social a{display:inline-block;margin:8px;padding:10px 18px;background:#ffffff10;color:#fff;text-decoration:none;border-radius:999px}
+footer{text-align:center;padding:40px;color:#aaa}
+</style>
 </head>
-
 <body>
 
-<!-- ===================== -->
-<!-- ПРЕЛОАДЕР -->
-<!-- ===================== -->
-
-<div id="loader">
-
-<div class="loader-logo">
-
-<img src="images/logo.png" alt="Logo">
-
-<h2>Senya Melnik</h2>
-
-</div>
-
-</div>
-
-<!-- ===================== -->
-<!-- ЧАСТИЦЫ -->
-<!-- ===================== -->
-
-<div id="particles"></div>
-
-<!-- ===================== -->
-<!-- МЕНЮ -->
-<!-- ===================== -->
-
+<!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
 <header>
-
-<nav>
-
-<div class="logo">
-
-<img src="images/logo.png">
-
-<span>Senya Melnik</span>
-
-</div>
-
-<ul>
-
-<li><a href="#">Главная</a></li>
-
-<li><a href="about.html">Обо мне</a></li>
-
-<li><a href="gallery.html">Галерея</a></li>
-
-<li><a href="news.html">Новости</a></li>
-
-<li><a href="contacts.html">Контакты</a></li>
-
-</ul>
-
-<div class="menu-btn">
-
-☰
-
-</div>
-
-</nav>
-
+<h1>Senya Melnik</h1>
+<p>YouTuber • Streamer • Minecraft Creator • Основатель SkyNix</p>
+<a class="btn" href="#about">Подробнее</a>
 </header>
 
-<!-- ===================== -->
-<!-- HERO -->
-<!-- ===================== -->
-
-<section class="hero">
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<h1>
-
-Привет!
-
-<br>
-
-Я <span>Senya Melnik</span>
-
-</h1>
-
-<p>
-
-Ютубер • Стример • Создатель SkyNix
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="https://www.youtube.com/@SenyaMelnik_Games" target="_blank">
-
-YouTube
-
-</a>
-
-<a href="https://t.me/SenyaMelnik" target="_blank">
-
-Telegram
-
-</a>
-
+<!-- ===== ОБО МНЕ ===== -->
+<section id="about">
+<h2>👋 Обо мне</h2>
+<div class="grid">
+<div class="card"><h3>Кто я?</h3><p>Меня зовут Сеня Мельник. Я создаю контент по играм, в основном Minecraft.</p></div>
+<div class="card"><h3>SkyNix</h3><p>Создатель команды SkyNix. Работаем над сериалами и проектами Minecraft.</p></div>
+<div class="card"><h3>Чем занимаюсь</h3><p>YouTube, стримы, режиссура, организация команды, монтаж.</p></div>
+<div class="card"><h3>Цель</h3><p>Хочу стать известным контент-мейкером и сниматься в кино.</p></div>
 </div>
-
-</div>
-
 </section>
 
-<!-- ===================== -->
-<!-- КРАТКО ОБО МНЕ -->
-<!-- ===================== -->
+<!-- ===== НАВЫКИ ===== -->
+<section>
+<h2>🎮 Навыки</h2>
 
-<section class="about-preview">
+<div class="skill">Minecraft - 95%
+<div class="bar"><div class="fill" data-width="95%"></div></div></div>
 
-<div class="container">
+<div class="skill">Монтаж - 90%
+<div class="bar"><div class="fill" data-width="90%"></div></div></div>
 
-<div class="about-image">
+<div class="skill">YouTube - 88%
+<div class="bar"><div class="fill" data-width="88%"></div></div></div>
 
-<img src="images/avatar.png">
+<div class="skill">Организация - 90%
+<div class="bar"><div class="fill" data-width="90%"></div></div></div>
 
-</div>
-
-<div class="about-text">
-
-<h2>
-
-Обо мне
-
-</h2>
-
-<p>
-
-Привет!
-
-Меня зовут Сеня Мельник.
-
-Я создаю игровые видео, стримы и Minecraft-проекты.
-
-Также являюсь создателем команды SkyNix.
-
-</p>
-
-<a href="about.html">
-
-Подробнее →
-
-</a>
-
-</div>
-
-</div>
-
+<div class="skill">Режиссура - 85%
+<div class="bar"><div class="fill" data-width="85%"></div></div></div>
 </section>
 
-<!-- ===================== -->
-<!-- ГАЛЕРЕЯ -->
-<!-- ===================== -->
-
-<section class="gallery-preview">
-
-<div class="container">
-
-<h2>Галерея</h2>
-
-<p class="section-description">
-Фотографии, скриншоты, проекты и самые яркие моменты.
-</p>
-
-<div class="gallery-grid">
-
-<div class="gallery-card">
-<img src="images/gallery/1.jpg" alt="">
+<!-- ===== СТАТИСТИКА YOUTUBE ===== -->
+<section>
+<h2>📊 Статистика YouTube</h2>
+<div class="stats">
+<div class="stat"><div>👥 Подписчики</div><div id="subs" class="num">...</div></div>
+<div class="stat"><div>👀 Просмотры</div><div id="views" class="num">...</div></div>
+<div class="stat"><div>🎬 Видео</div><div id="videos" class="num">...</div></div>
 </div>
-
-<div class="gallery-card">
-<img src="images/gallery/2.jpg" alt="">
-</div>
-
-<div class="gallery-card">
-<img src="images/gallery/3.jpg" alt="">
-</div>
-
-<div class="gallery-card">
-<img src="images/gallery/4.jpg" alt="">
-</div>
-
-</div>
-
-<a class="main-button" href="gallery.html">
-Открыть галерею →
-</a>
-
-</div>
-
 </section>
 
-<!-- ===================== -->
-<!-- НОВОСТИ -->
-<!-- ===================== -->
-
-<section class="news-preview">
-
-<div class="container">
-
-<h2>Последние новости</h2>
-
-<div class="news-grid">
-
-<div class="news-card">
-
-<h3>Создание нового сайта</h3>
-
-<p>
-Началась разработка официального сайта Senya Melnik.
-</p>
-
-<span>Сегодня</span>
-
+<!-- ===== СОЦСЕТИ ===== -->
+<section>
+<h2>🌐 Социальные сети</h2>
+<div class="social">
+<a href="https://www.youtube.com/@SenyaMelnik_Games">YouTube</a>
+<a href="https://www.youtube.com/@SenyaMelnik">Второй канал</a>
+<a href="https://t.me/SenyaMelnik">Telegram</a>
+<a href="https://www.twitch.tv/senya_melnik">Twitch</a>
+<a href="https://vk.com/senyamelnik">VK</a>
 </div>
-
-<div class="news-card">
-
-<h3>SkyNix</h3>
-
-<p>
-Команда продолжает работу над новыми проектами.
-</p>
-
-<span>Недавно</span>
-
-</div>
-
-<div class="news-card">
-
-<h3>YouTube</h3>
-
-<p>
-Следите за выходом новых роликов и стримов.
-</p>
-
-<span>Скоро</span>
-
-</div>
-
-</div>
-
-<a class="main-button" href="news.html">
-Все новости →
-</a>
-
-</div>
-
 </section>
 
-<!-- ===================== -->
-<!-- СОТРУДНИЧЕСТВО -->
-<!-- ===================== -->
-
-<section class="collab">
-
-<div class="container">
-
-<h2>Сотрудничество</h2>
-
-<p>
-
-Если вы хотите предложить рекламу,
-совместный проект или другое сотрудничество,
-свяжитесь со мной.
-
-</p>
-
-<a class="main-button"
-
-href="https://t.me/SenyaCollabBot"
-
-target="_blank">
-
-Связаться
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- СОЦСЕТИ -->
-<!-- ===================== -->
-
-<section class="social">
-
-<div class="container">
-
-<h2>Мои соцсети</h2>
-
-<div class="social-buttons">
-
-<a href="https://www.youtube.com/@SenyaMelnik_Games" target="_blank">
-
-📺 YouTube
-
-</a>
-
-<a href="https://t.me/SenyaMelnik" target="_blank">
-
-💬 Telegram
-
-</a>
-
-<a href="https://www.twitch.tv/senya_melnik" target="_blank">
-
-🎮 Twitch
-
-</a>
-
-<a href="https://vk.com/senyamelnik" target="_blank">
-
-👥 VK
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- СТАТИСТИКА -->
-<!-- ===================== -->
-
-<section class="stats">
-
-<div class="container">
-
-<h2>Немного обо мне</h2>
-
-<div class="stats-grid">
-
-<div class="stat-card">
-<h3>YouTube</h3>
-<p>Игровые видео и стримы</p>
-</div>
-
-<div class="stat-card">
-<h3>SkyNix</h3>
-<p>Создатель команды</p>
-</div>
-
-<div class="stat-card">
-<h3>Minecraft</h3>
-<p>Сериалы и проекты</p>
-</div>
-
-<div class="stat-card">
-<h3>Ростов-на-Дону</h3>
-<p>Россия</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- ГАЛЕРЕЯ -->
-<!-- ===================== -->
-
-<section class="gallery-preview">
-
-<div class="container">
-
-<h2>Галерея</h2>
-
-<p class="section-subtitle">
-
-Лучшие фотографии, скриншоты и моменты.
-
-</p>
-
-<div class="gallery-grid">
-
-<div class="gallery-item">
-<img src="images/gallery/1.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="images/gallery/2.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="images/gallery/3.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="images/gallery/4.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="images/gallery/5.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="images/gallery/6.jpg">
-</div>
-
-</div>
-
-<a class="main-btn" href="gallery.html">
-
-Открыть всю галерею
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- НОВОСТИ -->
-<!-- ===================== -->
-
-<section class="news">
-
-<div class="container">
-
-<h2>Последние новости</h2>
-
-<div class="news-grid">
-
-<div class="news-card">
-
-<span>🔥 Новость</span>
-
-<h3>
-
-Открытие официального сайта
-
-</h3>
-
-<p>
-
-Добро пожаловать на мой официальный сайт!
-
-</p>
-
-</div>
-
-<div class="news-card">
-
-<span>🎮 SkyNix</span>
-
-<h3>
-
-Новые проекты
-
-</h3>
-
-<p>
-
-Команда активно работает над новыми сериалами.
-
-</p>
-
-</div>
-
-<div class="news-card">
-
-<span>📺 YouTube</span>
-
-<h3>
-
-Новые видео
-
-</h3>
-
-<p>
-
-Не забывайте подписываться на канал.
-
-</p>
-
-</div>
-
-</div>
-
-<a class="main-btn" href="news.html">
-
-Все новости
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- СОЦСЕТИ -->
-<!-- ===================== -->
-
-<section class="social">
-
-<div class="container">
-
-<h2>Мои соцсети</h2>
-
-<div class="social-grid">
-
-<a href="https://www.youtube.com/@SenyaMelnik_Games" target="_blank">
-
-📺 YouTube
-
-</a>
-
-<a href="https://t.me/SenyaMelnik" target="_blank">
-
-💬 Telegram
-
-</a>
-
-<a href="https://vk.com/senyamelnik" target="_blank">
-
-👥 VK
-
-</a>
-
-<a href="https://www.twitch.tv/senya_melnik" target="_blank">
-
-🎮 Twitch
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- СОТРУДНИЧЕСТВО -->
-<!-- ===================== -->
-
-<section class="contacts">
-
-<div class="container">
-
-<h2>Сотрудничество</h2>
-
-<p>
-
-По вопросам рекламы, сотрудничества или совместных проектов.
-
-</p>
-
-<a class="main-btn"
-
-href="https://t.me/SenyaCollabBot"
-
-target="_blank">
-
-Связаться
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ===================== -->
-<!-- ФУТЕР -->
-<!-- ===================== -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-logo">
-
-<img src="images/logo.png" alt="Logo">
-
-<h2>Senya Melnik</h2>
-
-</div>
-
-<p>
-
-Спасибо за посещение моего сайта!
-
-</p>
-
-<div class="footer-links">
-
-<a href="#">Главная</a>
-
-<a href="about.html">Обо мне</a>
-
-<a href="gallery.html">Галерея</a>
-
-<a href="news.html">Новости</a>
-
-<a href="contacts.html">Контакты</a>
-
-</div>
-
-<div class="footer-social">
-
-<a href="https://www.youtube.com/@SenyaMelnik_Games" target="_blank">
-
-📺
-
-</a>
-
-<a href="https://t.me/SenyaMelnik" target="_blank">
-
-💬
-
-</a>
-
-<a href="https://vk.com/senyamelnik" target="_blank">
-
-👥
-
-</a>
-
-<a href="https://www.twitch.tv/senya_melnik" target="_blank">
-
-🎮
-
-</a>
-
-</div>
-
-<p class="copyright">
-
-© 2026 Senya Melnik. Все права защищены.
-
-</p>
-
-</div>
-
-</footer>
-
-<!-- ===================== -->
-<!-- КНОПКА НАВЕРХ -->
-<!-- ===================== -->
-
-<button id="scrollTop">
-
-↑
-
-</button>
-
-<!-- ===================== -->
-<!-- КОНТЕЙНЕР ЧАСТИЦ -->
-<!-- ===================== -->
-
-<canvas id="particles-canvas"></canvas>
-
-<!-- ===================== -->
-<!-- JAVASCRIPT -->
-<!-- ===================== -->
-
-<script src="js/script.js"></script>
-
-<script src="js/particles.js"></script>
-
-<script src="js/gallery.js"></script>
-
+<footer>© 2026 Senya Melnik</footer>
+
+<script>
+// ===== АНИМАЦИЯ НАВЫКОВ =====
+document.querySelectorAll(".fill").forEach(e=>setTimeout(()=>e.style.width=e.dataset.width,300));
+
+// ===== НАСТРОЙКА YOUTUBE API =====
+const API_KEY="AIzaSyCzxikyD1hzyMTPQumHPtkynEVpKCQoB9k";
+const CHANNEL_ID="UCSw6HgOIq9GQlNgSPIpSDwg";
+
+// ===== ЗАГРУЗКА СТАТИСТИКИ =====
+if(API_KEY!=="ВСТАВЬ_API_KEY"){
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`)
+.then(r=>r.json())
+.then(d=>{
+const s=d.items[0].statistics;
+subs.textContent=Number(s.subscriberCount).toLocaleString("ru-RU");
+views.textContent=Number(s.viewCount).toLocaleString("ru-RU");
+videos.textContent=Number(s.videoCount).toLocaleString("ru-RU");
+}).catch(console.error);
+}else{
+subs.textContent="API";
+views.textContent="API";
+videos.textContent="API";
+}
+</script>
 </body>
-
 </html>
