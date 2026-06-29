@@ -1,143 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senya Melnik</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f1a;
-            color: white;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: #1a1a2e;
-            padding: 20px;
-            text-align: center;
-        }
+<title>Senya Melnik | Официальный сайт</title>
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+<meta name="description" content="Официальный сайт Senya Melnik. YouTube, стримы, Minecraft, SkyNix, новости и сотрудничество.">
 
-        nav {
-            margin-top: 10px;
-        }
+<meta name="keywords" content="Senya Melnik, SkyNix, Minecraft, YouTube, MrSenya_YT">
 
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
+<meta name="author" content="Senya Melnik">
 
-        nav a:hover {
-            color: #00c3ff;
-        }
+<link rel="icon" href="favicon.ico">
 
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-        }
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/mobile.css">
 
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            opacity: 0.8;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #00c3ff;
-            color: black;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .card {
-            background: #1a1a2e;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1a1a2e;
-            margin-top: 40px;
-            opacity: 0.7;
-        }
-    </style>
 </head>
 
 <body>
 
+<!-- ===================== -->
+<!-- ПРЕЛОАДЕР -->
+<!-- ===================== -->
+
+<div id="loader">
+
+<div class="loader-logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<h2>Senya Melnik</h2>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+<!-- ЧАСТИЦЫ -->
+<!-- ===================== -->
+
+<div id="particles"></div>
+
+<!-- ===================== -->
+<!-- МЕНЮ -->
+<!-- ===================== -->
+
 <header>
-    <h1>Senya Melnik</h1>
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#about">Обо мне</a>
-        <a href="#projects">Проекты</a>
-        <a href="#contact">Контакты</a>
-    </nav>
+
+<nav>
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<span>Senya Melnik</span>
+
+</div>
+
+<ul>
+
+<li><a href="#">Главная</a></li>
+
+<li><a href="about.html">Обо мне</a></li>
+
+<li><a href="gallery.html">Галерея</a></li>
+
+<li><a href="news.html">Новости</a></li>
+
+<li><a href="contacts.html">Контакты</a></li>
+
+</ul>
+
+<div class="menu-btn">
+
+☰
+
+</div>
+
+</nav>
+
 </header>
 
-<section class="hero" id="home">
-    <h2>Добро пожаловать!</h2>
-    <p>Это мой первый сайт на GitHub Pages, и он сейчас на разработке</p>
-    <a class="btn" href="#projects">Смотреть проекты</a>
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Привет!
+
+<br>
+
+Я <span>Senya Melnik</span>
+
+</h1>
+
+<p>
+
+Ютубер • Стример • Создатель SkyNix
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://www.youtube.com/@SenyaMelnik_Games" target="_blank">
+
+YouTube
+
+</a>
+
+<a href="https://t.me/SenyaMelnik" target="_blank">
+
+Telegram
+
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section" id="about">
-    <h2>Обо мне</h2>
-    <div class="card">
-        Скоро... [тут должна быть инфа обо мне]
-    </div>
+<!-- ===================== -->
+<!-- КРАТКО ОБО МНЕ -->
+<!-- ===================== -->
+
+<section class="about-preview">
+
+<div class="container">
+
+<div class="about-image">
+
+<img src="images/avatar.png">
+
+</div>
+
+<div class="about-text">
+
+<h2>
+
+Обо мне
+
+</h2>
+
+<p>
+
+Привет!
+
+Меня зовут Сеня Мельник.
+
+Я создаю игровые видео, стримы и Minecraft-проекты.
+
+Также являюсь создателем команды SkyNix.
+
+</p>
+
+<a href="about.html">
+
+Подробнее →
+
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section" id="projects">
-    <h2>Проекты</h2>
-
-    <div class="card">
-        <h3>Проект 1</h3>
-        <p>Это тоже скоро будет... [тут описание первого проекта]</p>
-    </div>
-
-    <div class="card">
-        <h3>Проект 2</h3>
-        <p>[а тут будет второго проекта]</p>
-    </div>
-</section>
-
-<section class="section" id="contact">
-    <h2>Контакты</h2>
-    <div class="card">
-        Email: example@mail.com<br>
-        Discord / Telegram / YouTube — я скоро добавлю ссылки...
-    </div>
-</section>
-
-<footer>
-    © 2026 Senya Melnik. Все права защищены.
-</footer>
-
-</body>
-</html>
+    
