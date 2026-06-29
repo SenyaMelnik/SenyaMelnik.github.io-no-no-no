@@ -103,7 +103,7 @@ const CHANNEL_ID="UCSw6HgOIq9GQlNgSPIpSDwg";
 
 // ===== ЗАГРУЗКА СТАТИСТИКИ =====
 if(API_KEY!=="AIzaSyCzxikyD1hzyMTPQumHPtkynEVpKCQoB9k"){
-fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${UCSw6HgOIq9GQlNgSPIpSDwg}&key=${AIzaSyCzxikyD1hzyMTPQumHPtkynEVpKCQoB9k}`)
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`)
 .then(r=>r.json())
 .then(d=>{
 const s=d.items[0].statistics;
